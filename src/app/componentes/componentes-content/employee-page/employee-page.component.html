@@ -1,2 +1,51 @@
-<p>employee-page works!</p>
 <app-header [titleHeader]="title"></app-header>
+
+<ul class="collection with-header">
+    <li class="collection-header">
+        <div class="row">
+            <div class="col s4">
+                <img src="./../../../../assets/imagenes/user.png" alt="" class="circle" height="100px">
+            </div>
+            <div class="col s8">
+                <span class="title"><strong>{{employee.title}}</strong></span>
+                <p class="text-muted">
+                    {{employee.position}}
+                </p>
+            </div>
+        </div>
+
+    </li>
+
+    <li class="collection-item avatar">
+        <i class="material-icons circle">textsms</i>
+        <span class="title">CALL OFFICE</span>
+        <p class="text-muted">
+            {{employee.detail.call_office}}
+        </p>
+        <a class="secondary-content"><i class="material-icons">email</i></a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle">textsms</i>
+        <span class="title">CALL MOBILE</span>
+        <p class="text-muted">
+            {{employee.detail.call_mobile}}
+        </p>
+        <a class="secondary-content"><i class="material-icons">email</i></a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle">textsms</i>
+        <span class="title">SMS</span>
+        <p class="text-muted">
+            {{employee.detail.sms}}
+        </p>
+        <a class="secondary-content"><i class="material-icons">email</i></a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle">contact_mail</i>
+        <span class="title">Email</span>
+        <p class="text-muted">
+            {{employee.detail.mail}}
+        </p>
+        <a class="secondary-content"><i class="material-icons">email</i></a>
+    </li>
+</ul>

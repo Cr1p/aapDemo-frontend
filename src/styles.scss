@@ -52,3 +52,11 @@ body {
   -ms-flex-pack: distribute!important;
   justify-content: space-around!important;
 }
+
+.text-muted {
+  color: #6c757d!important;
+}
+
+.collection .collection-item.avatar {
+  min-height: 60px;
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-employee-list-item',
@@ -7,11 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EmployeeListItemComponent implements OnInit {
 
-  @Input()item: any;
+  @Input() item: any;
 
-  constructor() { }
+  constructor(public _dataService: DataService) { }
 
   ngOnInit() {
+  }
+
+  sendEmployee(_employee) {
+    this._dataService.employee.emit(_employee);
   }
 
 }

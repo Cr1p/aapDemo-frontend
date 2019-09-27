@@ -1,11 +1,20 @@
-<div class="card horizontal" *ngIf="item">
-    <div class="card-image">
-        <img src="https://lorempixel.com/100/100">
+    <!--<div class="card horizontal" *ngIf="item">
+ <div class="card-image">
+        <img src="./../../../../../../assets/imagenes/user.png">
     </div>
     <div class="card-stacked">
         <div class="card-content">
             <span class="card-title"><strong>{{item.title}}</strong></span>
-            <p>{{item.position}}</p>
+            <p class="text-muted">{{item.position}}</p>
         </div>
-    </div>
-</div>
+    </div> 
+
+</div>-->
+<ul class="collection" *ngIf="item">
+    <li class="collection-item avatar">
+        <img src="./../../../../../../assets/imagenes/user.png" alt="" class="circle" height="80px">
+        <span class="title"><strong>{{item.title}}</strong></span>
+        <p class="text-muted">{{item.position}}</p>
+        <a (click)="sendEmployee(item)" class="secondary-content"><i class="material-icons">send</i></a>
+    </li>
+</ul>
