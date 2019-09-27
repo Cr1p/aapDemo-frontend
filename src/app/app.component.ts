@@ -12,7 +12,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this._router.navigate(['formulario']);
+    this._router.navigate(['componentes']);
   }
   goToModule(mod) {
     this._router.navigate(['/' + mod]);

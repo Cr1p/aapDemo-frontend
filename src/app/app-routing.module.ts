@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'formulario', loadChildren: './formulario/formulario.module#FormularioModule',
   },
   {
-    path: 'principal', loadChildren: './principal/principal.module#PrincipalModule',
+    path: 'componentes', loadChildren: './componentes/componentes.module#ComponentesModule',
     // canActivate: [AuthGuard]
   },  
 ];
