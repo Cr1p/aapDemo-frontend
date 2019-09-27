@@ -11,24 +11,24 @@ export class EmployeePageComponent implements OnInit, OnDestroy {
 
   title = 'Employee';
 
-  employee: any = {
-    detail: {
-    }
-  };
+  // employee: any = {
+  //   detail: {
+  //   }
+  // };
   employeeSuscription: Subscription;
 
 
   constructor(public dataService: DataService) { }
 
   ngOnInit() {
-    this.employeeSuscription = this.dataService.employee.subscribe(_el => {
-      this.employee = _el;
-      console.log(_el)
-    })
+    // this.employeeSuscription = this.dataService.employee.subscribe(_el => {
+    //   this.employee = _el;
+    //   console.log(_el)
+    // })
   }
-  
+
   ngOnDestroy() {
-    this.employeeSuscription.unsubscribe();
+    // this.employeeSuscription.unsubscribe();
   }
 
 }

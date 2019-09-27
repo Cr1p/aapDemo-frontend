@@ -1,6 +1,6 @@
 <app-header [titleHeader]="title"></app-header>
 
-<ul class="collection with-header">
+<ul class="collection with-header" *ngIf="this.dataService.employee | async as employee; else sinData">
     <li class="collection-header">
         <div class="row">
             <div class="col s4">
@@ -49,3 +49,11 @@
         <a class="secondary-content"><i class="material-icons">email</i></a>
     </li>
 </ul>
+
+<ng-template #sinData>
+    <div class="row">
+        <div class="col s12">
+            <h6 class="text-muted">No ha seleccionado ningun datos</h6>
+        </div>
+    </div>
+</ng-template>
