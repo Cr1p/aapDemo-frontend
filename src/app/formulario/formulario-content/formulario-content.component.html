@@ -1,1 +1,61 @@
 <p>formulario-content works!</p>
+<div class="row">
+    <div class="col s3">
+        <div class="card-image">
+            <img src="./../../../assets/imagenes/user.png">
+            <h5 class="card-title"><strong>Rafaga Teneorio</strong></h5>
+            <br>
+            <span class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis reprehenderit velit deleniti cupiditate facere quidem. Deserunt, molestiae neque itaque aut alias harum, sit nulla iste quod nesciunt, sapiente tempore rerum?
+            </span>
+        </div>
+    </div>
+    <div class="col s9">
+        <form #EmployeeForm>
+            <div class="row">
+                <div class="col s6">
+                    <div class="row">
+                        <h4 class="card-title">User Details</h4>
+                        <div class="input-field col s12">
+                            <input id="Full Name" type="text" class="validate" required>
+                            <label for="Full Name">Last Name</label>
+                        </div>
+
+                        <div class=" col s12">
+                            <input type="text" class="datepicker">
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option [value]="ls.id" *ngFor="let ls of generoList">{{ls.valor}}</option>
+                            </select>
+                            <label>Geneder</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="row">
+                        <h4 class="card-title">Account Details</h4>
+                        <div class="input-field col s12">
+                            <input id="Username" type="text" class="validate" required>
+                            <label for="Username">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
